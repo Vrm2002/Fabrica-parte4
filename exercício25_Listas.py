@@ -48,7 +48,7 @@ print(list7) #Printa o código acima.
 list7.sort(reverse=True) #Trocará a ordem para decrescente. String será a ordem alfabética contrária.
 
 list8=[1,2,3,4,5,6,7,8,9]
-print (list8.index(4)) #Informa o índice que está o número "4", que é o índice 3.
+print(list8.index(4)) #Informa o índice que está o número "4", que é o índice 3.
 
 list9=[88,81,82,84]
 list9.insert(1,100) #O primeiro número é o índice onde seu número deve estar. O segundo é o número informado.
