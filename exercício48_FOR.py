@@ -24,3 +24,9 @@ for x in range(100,0,-1): #Imprimirá do 100 ao 1. Caso o número de sequencia s
 for i in range(5): #O I só terá seu valor aumentado quando J completar um loop até o numero 5, quando ele chega no 5, o i aumenta para 1. Um loop é gerado até que ambos chegem no valor máximo, que no caso de i é 4 e o de j é 5.
     for j in range(6):
         print(i,j)
+
+list=[]
+for i in range(5): #Inputs podem ser usados para ser utilizados junto da função append para preencherem listas no FOR.
+    list.append(input("Digite um ítem: "))
+for i in list: #Coloque uma variável in lista e mande printar a lista para receber cada ítem da lista.
+    print(i)
