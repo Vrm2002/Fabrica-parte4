@@ -8,7 +8,7 @@ cont=0
 print("Veículos de passeio na ordem:\n1- {:s}\n2- {:s}\n3- {:s}\n4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4]))
 for i in range(5):
     veiculos.append(int(input("Digite o número de veículos de passeio na cidade correspondente: ")))
-print("\nNúmeros de acidentes de trânsito na ordem:\n1- {:s}\n2- {:s}\n3- {:s}4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4]))
+print("\nNúmeros de acidentes de trânsito na ordem:\n1- {:s}\n2- {:s}\n3- {:s}\n4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4]))
 for i in range(5):
     acid.append(int(input("Digite o número de acidentes de trânsito na cidade correspondente: ")))
 
