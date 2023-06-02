@@ -1,6 +1,6 @@
 par=[]
 impar=[]
-for i in range(10):
+for i in range(10): #Lê os números.
     num=int(input("Digite um número: "))
     if num%2==0:
         par.append(num)
@@ -10,9 +10,9 @@ for i in range(10):
         print("Número negativo não entra para as categorias.")
     else:
         print("O que você digitou não foi um número.")
-print("\nOs pares que você digitou são: ")
-for i in par:
+print("\nOs pares que você digitou são: ") 
+for i in par: #Imprime os pares.
     print(i)
 print("\nE os ímpares são: ")
-for i in impar:
+for i in impar: #Imprime os impares.
     print(i)

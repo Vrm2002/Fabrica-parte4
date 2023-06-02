@@ -15,7 +15,7 @@ for i in range(5):
 medvei=(veiculos[0]+veiculos[1]+veiculos[2]+veiculos[3]+veiculos[4])/5
 
 
-print("Maior índice e Menor índice de acidentes:\n") #Titulo com as informações.
+print("\nMaior índice e Menor índice de acidentes:\n") #Titulo com as informações.
 if min(plusminus)==acid[0]:#Compara as informalões e apresenta a menor delas.
     print("A cidade com menor índice de acidentes de trânsito é {:s}, com {:d} acidentes de trânsito.".format(cidades[0],acid[0]))
 elif min(plusminus)==acid[1]:
