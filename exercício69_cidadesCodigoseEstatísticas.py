@@ -1,23 +1,22 @@
-cidades=["Campo Grande","São Paulo","Rio de Janeiro","Sidrolândia","Cuiabá"]
+cidades=["Campo Grande","São Paulo","Rio de Janeiro","Sidrolândia","Cuiabá"] #O ID das cidades é precisamente o índice
 veiculos=[]
 acid=[]
 plusminus=[]
 vei2000=[]
 cont=0
 
-print("Veículos de passeio na ordem:\n1- {:s}\n2- {:s}\n3- {:s}\n4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4]))
+print("Veículos de passeio na ordem:\n1- {:s}\n2- {:s}\n3- {:s}\n4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4])) #Titulo com as informações.
 for i in range(5):
-    veiculos.append(int(input("Digite o número de veículos de passeio na cidade correspondente: ")))
+    veiculos.append(int(input("Digite o número de veículos de passeio na cidade correspondente: "))) #Lê o numero pedido.
 print("\nNúmeros de acidentes de trânsito na ordem:\n1- {:s}\n2- {:s}\n3- {:s}\n4- {:s}\n5- {:s}".format(cidades[0],cidades[1],cidades[2],cidades[3],cidades[4]))
 for i in range(5):
-    acid.append(int(input("Digite o número de acidentes de trânsito na cidade correspondente: ")))
-
-plusminus.append(acid[0],acid[1],acid[2],acid[3],acid[4])
+    acid.append(int(input("Digite o número de acidentes de trânsito na cidade correspondente: "))) #Lê o numero pedido.
+    plusminus.append(acid[i])
 medvei=(veiculos[0]+veiculos[1]+veiculos[2]+veiculos[3]+veiculos[4])/5
 
 
-print("Maior índice e Menor índice de acidentes:\n")
-if min(plusminus)==acid[0]:
+print("Maior índice e Menor índice de acidentes:\n") #Titulo com as informações.
+if min(plusminus)==acid[0]:#Compara as informalões e apresenta a menor delas.
     print("A cidade com menor índice de acidentes de trânsito é {:s}, com {:d} acidentes de trânsito.".format(cidades[0],acid[0]))
 elif min(plusminus)==acid[1]:
     print("A cidade com menor índice de acidentes de trânsito é {:s}, com {:d} acidentes de trânsito.".format(cidades[1],acid[1]))
@@ -32,7 +31,7 @@ elif plusminus[0]<0 or plusminus[1]<0 or plusminus[2]<0 or plusminus[3]<0 or plu
 else:
     print("Existem números iguais. ERRO.")
 
-if max(plusminus)==acid[0]:
+if max(plusminus)==acid[0]:#Compara as informalões e apresenta a maior delas.
     print("A cidade com maior índice de acidentes de trânsito é {:s}, com {:d} acidentes de trânsito.".format(cidades[0],acid[0]))
 elif max(plusminus)==acid[1]:
     print("A cidade com maior índice de acidentes de trânsito é {:s}, com {:d} acidentes de trânsito.".format(cidades[1],acid[1]))
@@ -45,7 +44,7 @@ elif max(plusminus)==acid[4]:
 
 print("\nA média de veículos nas cinco cidades é {:.0f}".format(medvei))
 
-if veiculos[0]<2000:
+if veiculos[0]<2000: #Caso as informações sejam menor do que 2000 elas serão adicionadas.
     vei2000.append(acid[0])
 if veiculos[1]<2000:
     vei2000.append(acid[1])
@@ -56,7 +55,7 @@ if veiculos[3]<2000:
 if veiculos[4]<2000:
     vei2000.append(acid[4])
 
-for i in vei2000:
+for i in vei2000: #Conta quantos itens tem na lista.
     cont=cont+1
 
 med2000=sum(vei2000)/cont
