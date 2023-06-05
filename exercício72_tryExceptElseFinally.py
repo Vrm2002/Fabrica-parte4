@@ -17,3 +17,8 @@ while True:
         print(c)
         os.system("pause")
         os.system("cls")
+
+#try - tenta um código
+#except - trata um erro
+#else - executa caso não tenha erros
+#finally - executa independente da circunstrância.
