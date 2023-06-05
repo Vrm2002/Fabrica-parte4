@@ -33,11 +33,13 @@ while True:
         else: #Caso não esteja entre os 12 meses.
             validate=False
             print("Erro!")
-            break
+            temp.pop()
+            continue
     elif testmonth==False: #Caso não seja digito.
         validate=False
         print("Erro!")
-        break
+        temp.pop()
+        continue
     
     yearv=input("Ano em que ela ocorreu: ") #Lê o ano.
     testyear=yearv.isdigit()
@@ -47,7 +49,9 @@ while True:
     elif testyear==False: #Se não for.
         validate=False
         print("ERRO!")
-        break
+        temp.pop()
+        month.pop()
+        continue
 
 if validate==True: #Caso nenhum erro tenha acontecido durante os digitos. A variável de controle permanecerá verdadeira e prosseguirá para os resultados.
     cont=0
@@ -66,4 +70,4 @@ if validate==True: #Caso nenhum erro tenha acontecido durante os digitos. A vari
 
     print("\nA maior temperatura informada foi de {:.2f} graus celsius em {:d}/{:d}.\nA menor informada foi {:.2f} graus celsius em {:d}/{:d}.\nA média de todas as temperaturas foi {:.2f} graus celsius.".format(more,moremonth,moreyear,less,lessmonth,lessyear,medtemp))
 elif validate==False: #Caso algum erro aconteça.
-    print("Ocorreu algum erro durante a coleta de informações ou então o programa foi encerrado sem coletar informação alguma. Por favor tente novamente.")
+    print("O programa foi encerrado sem coletar informação alguma. Por favor tente novamente.")
