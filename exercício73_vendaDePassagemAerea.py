@@ -11,13 +11,14 @@ shiplist=[]
 
 crew=[]
 crewmates=[]
+#As listas acima são para armazenar as informações.
 
 while True:
     option=input("BEM VINDO AO SOFTWARE DA EMPRESA AÉREA. ESCOLHA UMA OPÇÃO:\n1- Cadastro de Cliente.\n2- Cadastro de Passagem.\n3- Cadastro de Avião.\n4- Cadastro de Tripulação.\n5- Imprimir Relatório\n0- Sair.\nEscolha uma opção: ")
-    test=option.isdigit()
-    if test==True:
+    test=option.isdigit() #Teste pra saber se a variável está com um digito informado.
+    if test==True: #Caso sim.
         option=int(option)
-        if option==1:
+        if option==1: #Cadastro de Cliente.
             print("\nCADASTRO DE CLIENTE ---------------------\n")
             try:
                 name=input("Nome: ")
@@ -44,7 +45,7 @@ while True:
                 clients.append(regist)
                 os.system("pause")
                 os.system("cls")
-        elif option==2:
+        elif option==2: #Cadastro de Passagemm.
             print("\nCADASTRO DE PASSAGEM ---------------------")
             try:
                 destin=input("Destino: ")
@@ -68,7 +69,7 @@ while True:
                 ticketlist.append(ticket)
                 os.system("pause")
                 os.system("cls")
-        elif option==3:
+        elif option==3: #Cadastro de Avião.
             print("\nCADASTRO DE AVIÃO ---------------------")
             try:
                 model=input("Modelo: ")
@@ -91,7 +92,7 @@ while True:
                 shiplist.append(airship)
                 os.system("pause")
                 os.system("cls")
-        elif option==4:
+        elif option==4: #Cadastro de tripulação.
             print("\nCADASTRO DE TRIPULAÇÃO ---------------------")
             try:
                 name=input("Nome: ")
@@ -114,10 +115,10 @@ while True:
                 crewmates.append(crew)
                 os.system("pause")
                 os.system("cls")
-        elif option==5:
+        elif option==5: #Verificar registro.
             os.system("cls")
             option2=int(input("OBRE O QUE DESEJA IMPRIMIR? ---------------------\n1- Clientes.\n2- Passagens.\n3- Aviões.\n4- Tripulantes.\n0- Sair.\nEscolha: "))
-            if option2==1:
+            if option2==1: #Clientes.
                 os.system("cls")
                 try:
                     index=int(input("Digite o número de cadastro do cliente que você deseja ver: "))
@@ -131,7 +132,7 @@ while True:
                     print(clients[index])
                     os.system("pause")
                     os.system("cls")
-            elif option2==2:
+            elif option2==2: #Passagens.
                 os.system("cls")
                 try:
                     index=int(input("Digite o número de cadastro da passagem registrada: "))
@@ -145,7 +146,7 @@ while True:
                     print(ticketlist[index])
                     os.system("pause")
                     os.system("cls")
-            elif option2==3:
+            elif option2==3: #Aviões.
                 os.system("cls")
                 try:
                     index=int(input("Digite o número de cadastro do avião: "))
@@ -159,7 +160,7 @@ while True:
                     print(shiplist[index])
                     os.system("pause")
                     os.system("cls")
-            elif option2==4:
+            elif option2==4: #Tripulantes.
                 os.system("cls")
                 try:
                     index=int(input("Digite o número de cadastro do tripulante: "))
@@ -173,11 +174,11 @@ while True:
                     print(crewmates[index])
                     os.system("pause")
                     os.system("cls") 
-        elif option==0:
+        elif option==0: #Sair.
             os.system("cls")
             print("Obrigado por usar o sistema!")
             break
-    elif test==False:
+    elif test==False: #Caso não.
         os.system("cls")
         print("Erro! Opção inexistente!")
         os.system("pause")
