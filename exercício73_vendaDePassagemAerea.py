@@ -52,7 +52,8 @@ while True:
                 origin=input("Origem: ")
                 duration=float(input("Duração: "))
                 ticketval=float(input("Valor da passagem: "))
-                discount=(ticketval*0.5)-ticketval
+                discount=ticketval*0.05
+                finalvalue=ticketval-discount
                 print("Valor com desconto: {:f}".format(discount))
             except:
                 os.system("cls")
@@ -65,7 +66,7 @@ while True:
                 ticket.append(origin)
                 ticket.append(duration)
                 ticket.append(ticketval)
-                ticket.append(discount)
+                ticket.append(finalvalue)
                 ticketlist.append(ticket)
                 os.system("pause")
                 os.system("cls")
@@ -129,7 +130,7 @@ while True:
                     os.system("cls")
                 else:
                     os.system("cls")
-                    print(clients[index])
+                    print("Nome do Cliente: {:s}\nSobrenome: {:s}\nRG: {:d}\nCPF: {:d}\nEndereço: {:s}\nTelefone: {:d}\nIdade: {:d}".format(clients[index][0],clients[index][1],clients[index][2],clients[index][3],clients[index][4],clients[index][5],clients[index][6]))
                     os.system("pause")
                     os.system("cls")
             elif option2==2: #Passagens.
