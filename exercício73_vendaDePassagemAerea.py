@@ -179,6 +179,11 @@ while True:
             os.system("cls")
             print("Obrigado por usar o sistema!")
             break
+        else: #Qualquer número diferente.
+            os.system("cls")
+            print("Essa opção não existe.")
+            os.system("pause")
+            os.system("cls")
     elif test==False: #Caso não.
         os.system("cls")
         print("Erro! Opção inexistente!")
