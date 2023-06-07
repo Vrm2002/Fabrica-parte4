@@ -130,7 +130,7 @@ while True:
                     os.system("cls")
                 else:
                     os.system("cls")
-                    print("Nome do Cliente: {:s}\nSobrenome: {:s}\nRG: {:d}\nCPF: {:d}\nEndereço: {:s}\nTelefone: {:d}\nIdade: {:d}".format(clients[index][0],clients[index][1],clients[index][2],clients[index][3],clients[index][4],clients[index][5],clients[index][6]))
+                    print("RESULTADOS------------------------\nNome do Cliente: {:s}\nSobrenome: {:s}\nRG: {:d}\nCPF: {:d}\nEndereço: {:s}\nTelefone: {:d}\nIdade: {:d}".format(clients[index][0],clients[index][1],clients[index][2],clients[index][3],clients[index][4],clients[index][5],clients[index][6]))
                     os.system("pause")
                     os.system("cls")
             elif option2==2: #Passagens.
@@ -144,7 +144,7 @@ while True:
                     os.system("cls")
                 else:
                     os.system("cls")
-                    print(ticketlist[index])
+                    print("RESULTADOS------------------------\nDestino: {:s}\nOrigem: {:s}\nDuração: {:.0f} horas\nValor da Passagem: {:.2f}R$\nValor Final com Desconto: {:.2f}".format(ticketlist[index][0],ticketlist[index][1],ticketlist[index][2],ticketlist[index][3],ticketlist[index][4]))
                     os.system("pause")
                     os.system("cls")
             elif option2==3: #Aviões.
@@ -158,7 +158,7 @@ while True:
                     os.system("cls")
                 else:
                     os.system("cls")
-                    print(shiplist[index])
+                    print("RESULTADOS------------------------\nModelo: {:s}\nAno: {:d}\nHoras de Vôo: {:.0f}\nCor: {:s}\nQuantidade de Passageiros: {:d}".format(shiplist[index][0],shiplist[index][1],shiplist[index][2],shiplist[index][3],shiplist[index][4]))
                     os.system("pause")
                     os.system("cls")
             elif option2==4: #Tripulantes.
@@ -172,7 +172,7 @@ while True:
                     os.system("cls")
                 else:
                     os.system("cls")
-                    print(crewmates[index])
+                    print("RESULTADOS------------------------\nNome do Tripulante: {:s}\nDescrição do Cargo: {:s}\nIdade: {:d}\nData de Admissão: {:s}\nTelefone: {:d}".format(crewmates[index][0],crewmates[index][1],crewmates[index][2],crewmates[index][3],crewmates[index][4]))
                     os.system("pause")
                     os.system("cls") 
         elif option==0: #Sair.
