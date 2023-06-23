@@ -26,7 +26,6 @@ while True:
         os.system("cls")
     else:
         if a==0:
-            os.system("cls")
             break
         elif a>0 and b>=0:
             os.system("pause")
@@ -42,7 +41,7 @@ while True:
             os.system("pause")
             os.system("cls")
 
-print("------------------------------------------------------------------------------ Relatório do Dia ------------------------------------------------------------------------------\nValores das Prestações em Ordem:")
+print("------------------------------- Relatório do Dia -------------------------------\nValores das Prestações em Ordem:")
 for i in prestações:
     print("{:.2f}R$".format(i))
 print("\nDias de Atraso em Ordem:")
@@ -51,4 +50,6 @@ for i in diasAtraso:
 print("\nValores finais a serem pagados:")
 for i in valorFinal:
     print("{:.2f}R$".format(i))
+valorFinalTotal=sum(valorFinal)
+print("Valor total somado: {:.2f}R$".format(valorFinalTotal))
 #Programa que lê e faz calculo de juros e multa de diversos valores.
