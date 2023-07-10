@@ -6,21 +6,28 @@ while True:
 
     control = ControleRemoto("Black",button,1.34,3.34,2.24)
 
-    #    onoff = control.turn_on_off(button)
-    print(control.turn_on_off())
+    '''print(control.collor)
+    print(control.buttons)
+    print(control.height)
+    print(control.lenght)
+    print(control.thick)'''
 
-    #print(type(onoff))
+    onoff=control.turn_on_off()
 
- 
-    '''if onoff == True:
-        st("cls")
+   
+
+    #print(onoff)
+
+
+    if onoff == True:
+        #st("cls")
         print("TV Ligada.")
-        st("pause")
-        st("cls")
+        #st("pause")
+        #st("cls")
    
 
     else:
-        st("cls")
+        #st("cls")
         print("TV Desligada.")
-        st("pause")
-        st("cls")'''
+        #st("pause")
+        #st("cls")'''

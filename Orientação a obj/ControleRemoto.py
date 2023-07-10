@@ -10,7 +10,6 @@ class ControleRemoto():
 
 
     def turn_on_off(self):
-        #self.turnonoff=turnonoff       
         if self.buttons == "*":
             self.turnonoff = True
         elif self.buttons == "/":
