@@ -6,11 +6,11 @@ lock = False
 rectan = Rectangle()
 
 
-while True:
+while True: #Menu
     opt = input("PROGRAMA DE CALCULO DE AREA -----------------------------------\n\n1. INFORMAR VALOR DOS LADOS DO LOCAL\n2. MOSTRAR OS LADOS DO LOCAL\n3. CALCULAR ÁREA E PERÍMETRO DO LOCAL\n0. SAIR\n\nESCOLHA: ")
 
 
-    if opt == "1":
+    if opt == "1": #informar valor dos lados do retangulo
 
 
         try:
@@ -27,17 +27,17 @@ while True:
             ss("cls")
         
 
-        else:
+        else: 
 
 
-            if width < 0 or height < 0:
+            if width < 0 or height < 0: #Impede que insira lados negativos
                 ss("cls")
                 print("NÚMEROS NEGATIVOS FORAM INFORMADOS NA COLETA DE DADOS. PORTANTO A AÇÃO NÃO PODE SER EFETUADA!")
                 ss("pause")
                 ss("cls")
             
 
-            else:
+            else: 
                 ss("cls")
                 rectan.side_change(width,height)
                 lock = True
@@ -46,7 +46,7 @@ while True:
                 ss("cls")
         
 
-    elif opt == "2":
+    elif opt == "2": #Mostra os lados do retangulo
 
 
         if lock == True:
@@ -64,7 +64,7 @@ while True:
             ss("cls")
     
 
-    elif opt == "3":
+    elif opt == "3": #Calcula perimetro e area
 
 
         if lock == True:
@@ -82,13 +82,13 @@ while True:
             ss("cls")
     
 
-    elif opt == "0":
+    elif opt == "0": #Sair
         ss("cls")
         print("OBRIGADO POR UTILIZAR O PROGRAMA!")
         break
 
 
-    else:
+    else: #Opções inexistentes
         ss("cls")
         print("OPÇÃO INEXISTENTE!!!")
         ss("pause")

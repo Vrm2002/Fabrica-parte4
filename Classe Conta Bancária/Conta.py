@@ -10,12 +10,12 @@ class Conta():
         self.cpf = int(cpf)
 
     
-    def saque(self,sacar):
+    def saque(self,sacar): #Sacar
         self.saldo = self.saldo - sacar
 
     
-    def deposito(self,depositar):
+    def deposito(self,depositar): #Depositar
         self.saldo = self.saldo + depositar
     
-    def extrato(self):
+    def extrato(self): #Extrato
         print(self.saldo)
