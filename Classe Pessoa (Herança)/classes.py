@@ -27,7 +27,7 @@ class Student(Person): #Subclasse aluno
 class Professor(Person): #subclasse professor
 
 
-    def __init__(self,salary,name,age:int,adress,city,state):
+    def __init__(self,salary:float,name,age:int,adress,city,state):
         super().__init__(name,age,adress,city,state) #herança
         self.salary = salary
         print("=================================\nSeja Bem Vindo Professor!\n")
