@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton
 from PySide6.QtCore import  Qt
+from PySide6.QtGui import QPixmap
 import sys
 
 
@@ -11,7 +12,10 @@ class BattleWindow(QMainWindow):
 
 
         self.setWindowTitle("Pokemon Battle Screen")
-        self.setGeometry(1000,750,1000,750)
+        self.lbl = QLabel()
+        self.lbl.setPixmap(QPixmap("battleground.jpg"))
+        self.lbl.setScaledContents(True)
+        self.setCentralWidget(self.lbl)
 
 app = QApplication(sys.argv)
 battle_window = BattleWindow()
