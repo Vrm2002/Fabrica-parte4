@@ -35,7 +35,7 @@ class MainWindow(QWidget):
         self.setLayout(layout)
     
     def display_pikachu(self):
-        pixmap = QPixmap('picachu.jpg')
+        pixmap = QPixmap('picachu.png')
         self.image(pixmap)
     
     def display_caramelo(self):
@@ -45,8 +45,6 @@ class MainWindow(QWidget):
     def image(self, pixmap):
         scale_pixmap = pixmap.scaled(600,400, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         self.image_label.setPixmap(scale_pixmap)
-        
-       
         
     
 
