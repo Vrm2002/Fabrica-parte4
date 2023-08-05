@@ -1,5 +1,5 @@
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QDialog, QLineEdit, QCheckBox
+from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QDialog, QLineEdit, QCheckBox, QVBoxLayout 
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Qt
 
@@ -86,12 +86,18 @@ class MainWindow(QMainWindow):
         second_window = QDialog(self)
         second_window.setWindowTitle("INFO")
         second_window.setFixedSize(800,600)
-        second_window.exec()
+
         lbl6 = QLabel(f"Nome: {self.input.text()}")
         font6 = lbl6.font()
         font6.setPointSize(11)
         lbl6.setFont(font6)
-        lbl6.setGeometry(100,200,100,100)
+
+        information = QVBoxLayout
+        information.addWidget(lbl6)
+        second_window.exec()
+
+        #Tentei de tudo e até agora nada.
+        
 
 
 
