@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QVBoxLayout, QWidget, QFrame, QLineEdit, QCheckBox
 from PySide6.QtGui import QPixmap
-from PySide6.QtCore import Qt 
+from PySide6.QtCore import Qt
 
 
 class MainWindow(QMainWindow):
@@ -78,6 +78,16 @@ class MainWindow(QMainWindow):
 
         self.cadast = QPushButton("Cadastrar",self)
         self.cadast.setGeometry(200,490,400,100)
+        self.cadast.clicked.connect(self.initSW)
+
+
+    def initSW(self):
+
+
+        window2 = SecondWindow()
+        window2.addDockWidget()
+        window2.show()
+
 
 
 
@@ -103,6 +113,28 @@ class MainWindow(QMainWindow):
 
         else:
             self.ck2.setChecked(False)
+
+
+class SecondWindow(MainWindow):
+
+
+    def __init__(self):
+        super().__init__()
+
+
+        self.setFixedSize(800,600)
+        self.setWindowTitle("INFO.")
+
+
+
+        self.lbl6 = QLabel(f"Nome: {self.input.text()}")
+        font6 = self.lbl6.font()
+        font6.setPointSize(11)
+        self.lbl6.setFont(font6)
+        self.lbl6.setGeometry(100,200,100,100)
+
+
+
 
 
 if __name__ == "__main__":
