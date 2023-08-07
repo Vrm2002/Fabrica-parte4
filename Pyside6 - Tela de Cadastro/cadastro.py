@@ -75,7 +75,6 @@ class MainWindow(QMainWindow):
         self.ck2.setGeometry(195,93,100,100)
         self.ck2.stateChanged.connect(self.conf2)
 
-
         self.cadast = QPushButton("Cadastrar",self)
         self.cadast.setGeometry(200,490,400,100)
         self.cadast.clicked.connect(self.initSW)
@@ -83,23 +82,26 @@ class MainWindow(QMainWindow):
 
     def initSW(self):
 
-        second_window = QDialog(self)
-        second_window.setWindowTitle("INFO")
-        second_window.setFixedSize(800,600)
+        name = self.input.text()
+        phone = self.input2.text()
+        adress = self.input3.text()
 
-        lbl6 = QLabel(f"Nome: {self.input.text()}")
-        font6 = lbl6.font()
-        font6.setPointSize(11)
-        lbl6.setFont(font6)
 
-        information = QVBoxLayout
-        information.addWidget(lbl6)
-        second_window.exec()
+        if self.ck.isChecked() and not self.ck2.isChecked():
 
-        #Tentei de tudo e até agora nada.
+
+            second_window = SecondWindow()
+            second_window.UiInfo(name,phone,adress,"Másculino")
+            second_window.show()
+
+
+        elif self.ck2.isChecked() and not self.ck.isChecked():
+
+
+            second_window = SecondWindow()
+            second_window.UiInfo(name,phone,adress,"Feminino")
+            second_window.show()
         
-
-
 
     def conf(self,x):
 
@@ -125,10 +127,51 @@ class MainWindow(QMainWindow):
             self.ck2.setChecked(False)
 
 
+class SecondWindow(QMainWindow):
 
+
+    def __init__(self):
+        super().__init__()
+
+
+        self.setWindowTitle("INFO")
+        self.setFixedSize(800,600)
+
+    
+    def UiInfo(self,name,phone,adress,sex):
+
+
+        self.lbl6 = QLabel(f"Nome: {name}",self)
+        font6 = self.lbl6.font()
+        font6.setPointSize(11)
+        self.lbl6.setFont(font6)
+        self.lbl6.setGeometry(130,120,100,40)
+
+
+        self.lbl7 = QLabel(f"Telefone: {phone}",self)
+        font7 = self.lbl7.font()
+        font7.setPointSize(11)
+        self.lbl7.setFont(font7)
+        self.lbl7.setGeometry(130,300,100,40)
+
+
+        self.lbl8 = QLabel(f"Endereço: {adress}",self)
+        font8 = self.lbl8.font()
+        font8.setPointSize(11)
+        self.lbl8.setFont(font8)
+        self.lbl8.setGeometry(130,400,100,40)
+
+
+        self.lbl9 = QLabel(f"Sexo: {sex}",self)
+        font9 = self.lbl9.font()
+        font9.setPointSize(11)
+        self.lbl9.setFont(font9)
+        self.lbl9.setGeometry(130,500,100,40)
 
 
 if __name__ == "__main__":
+
+
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
