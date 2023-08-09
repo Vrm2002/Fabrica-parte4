@@ -1,7 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QDialog, QLineEdit, QCheckBox, QVBoxLayout 
 from PySide6.QtGui import QPixmap
-from PySide6.QtCore import Qt
 
 
 class MainWindow(QMainWindow):
@@ -13,8 +12,6 @@ class MainWindow(QMainWindow):
 
         self.setFixedSize(800,600)
         self.cadastUI()
-        self.conf(self)
-        self.conf2(self)
 
     
     def cadastUI(self):
@@ -81,6 +78,8 @@ class MainWindow(QMainWindow):
 
 
     def initSW(self):
+        self.second_window = SecondWindow()
+
 
         name = self.input.text()
         phone = self.input2.text()
@@ -88,19 +87,15 @@ class MainWindow(QMainWindow):
 
 
         if self.ck.isChecked() and not self.ck2.isChecked():
-
-
-            second_window = SecondWindow()
-            second_window.UiInfo(name,phone,adress,"Másculino")
-            second_window.show()
+            sex = "Másculino"
+            self.second_window.UiInfo(name,phone,adress,sex)
+            self.second_window.show()
 
 
         elif self.ck2.isChecked() and not self.ck.isChecked():
-
-
-            second_window = SecondWindow()
-            second_window.UiInfo(name,phone,adress,"Feminino")
-            second_window.show()
+            sex = "Feminino"
+            self.second_window.UiInfo(name,phone,adress,sex)
+            self.second_window.show()
         
 
     def conf(self,x):
@@ -127,13 +122,11 @@ class MainWindow(QMainWindow):
             self.ck2.setChecked(False)
 
 
-class SecondWindow(QMainWindow):
+class SecondWindow(QDialog):
 
 
     def __init__(self):
         super().__init__()
-
-
         self.setWindowTitle("INFO")
         self.setFixedSize(800,600)
 
@@ -141,37 +134,53 @@ class SecondWindow(QMainWindow):
     def UiInfo(self,name,phone,adress,sex):
 
 
+        layout = QVBoxLayout()
+
+
         self.lbl6 = QLabel(f"Nome: {name}",self)
         font6 = self.lbl6.font()
         font6.setPointSize(11)
         self.lbl6.setFont(font6)
-        self.lbl6.setGeometry(130,120,100,40)
+        self.lbl6.setGeometry(90,100,250,40)
+        layout.addWidget(self.lbl6)
 
 
         self.lbl7 = QLabel(f"Telefone: {phone}",self)
         font7 = self.lbl7.font()
         font7.setPointSize(11)
         self.lbl7.setFont(font7)
-        self.lbl7.setGeometry(130,300,100,40)
+        self.lbl7.setGeometry(90,200,250,40)
+        layout.addWidget(self.lbl7)
 
 
         self.lbl8 = QLabel(f"Endereço: {adress}",self)
         font8 = self.lbl8.font()
         font8.setPointSize(11)
         self.lbl8.setFont(font8)
-        self.lbl8.setGeometry(130,400,100,40)
+        self.lbl8.setGeometry(90,300,250,40)
+        layout.addWidget(self.lbl8)
 
 
         self.lbl9 = QLabel(f"Sexo: {sex}",self)
         font9 = self.lbl9.font()
         font9.setPointSize(11)
         self.lbl9.setFont(font9)
-        self.lbl9.setGeometry(130,500,100,40)
+        self.lbl9.setGeometry(90,400,250,40)
+        layout.addWidget(self.lbl9)
+
+
+        image_label = QLabel(self)
+        pixmap = QPixmap("picachu.png")
+        image_label.setPixmap(pixmap)
+        image_label.setGeometry(400,90,300,400)
+        image_label.setScaledContents(True)
+        layout.addWidget(image_label)
+
+
+        self.setLayout = layout
 
 
 if __name__ == "__main__":
-
-
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
