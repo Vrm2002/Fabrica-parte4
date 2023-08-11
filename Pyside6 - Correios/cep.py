@@ -14,7 +14,4 @@ class MainWindow(QMainWindow):
     def CepUi(self):
 
 
-
-
-
-e
+        
