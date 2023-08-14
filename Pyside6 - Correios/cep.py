@@ -1,5 +1,5 @@
 import brazilcep
-from PySide6.QtWidgets import QMainWindow
+from PySide6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QLineEdit, QLabel
 
 
 class MainWindow(QMainWindow):
@@ -8,10 +8,22 @@ class MainWindow(QMainWindow):
 
 
         self.setWindowTitle('Busca - CEP')
-        self.CepUi(self)
 
-    
-    def CepUi(self):
+
+        self.central_widget = QWidget()
+        self.setCentralWidget(self.central_widget)
+
+
+        self.lay = QVBoxLayout()
+        self.central_widget.setLayout(self.lay)
+
+
+        self.lbl_name = QLabel()
+        self.lay.addWidget(self.lbl_name)
+
+
+        self.input_name = QLineEdit()
+        self.lay.addWidget(self.input_name)
 
 
         
