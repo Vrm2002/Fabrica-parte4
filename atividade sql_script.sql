@@ -33,3 +33,6 @@ PAGMENT_DT date not null,
 primary key (MES_ANO)
 );
 rename table MENSALIDADE to MENSAL; #troca o nome da tabela
+alter table MENSAL change PAG_DATA PAG_DATA date not null; #Troca o nome de um atributo
+alter table MENSAL add column id_pag int not null first; #adiciona uma coluna, o first faz ser o primeiro
+alter table MENSAL add primary key(id); #Se a tabela já tiver primary key vai dar erro. 
