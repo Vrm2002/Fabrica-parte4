@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QDialog
-from PySide6.QtGui import QPixmap, Qt
+from PySide6.QtGui import QPixmap
 import sys 
 
 class quintuplas_apicacao(QMainWindow):
