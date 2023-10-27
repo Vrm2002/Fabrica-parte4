@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QDialog
-from PySide6.QtGui import QPixmap
+from PySide6.QtGui import QPixmap, Qt
 import sys 
 
 class quintuplas_apicacao(QMainWindow):
@@ -30,30 +30,45 @@ class quintuplas_apicacao(QMainWindow):
         self.button_miku.clicked.connect(self.miku_label)
         self.button_yotsuba.clicked.connect(self.yotsuba_label)
         self.button_itsuki.clicked.connect(self.itsuki_label)
-        
+
 
     def ichika_label(self):
-        pass 
+        self.window_ichika = quintuplas_dialog('Nakano Ichika','Ichika.jpg')
+        self.window_ichika.show()
 
 
     def nino_label(self):
-        pass
+        self.window_nino = quintuplas_dialog('Nakano Nino', 'Nino.jpg')
+        self.window_nino.show()
 
 
     def miku_label(self):
-        pass
+        self.window_miku = quintuplas_dialog('Nakano Miku', 'Miku.png')
+        self.window_miku.show()
 
 
     def yotsuba_label(self):
-        pass
+        self.window_yotsuba = quintuplas_dialog('Nakano Yotsuba', 'Yotsuba.jpg')
+        self.window_yotsuba.show()
 
     
     def itsuki_label(self):
-        pass
+        self.window_itsuki = quintuplas_dialog('Nakano Itsuki', 'Itsuki.png')
+        self.window_itsuki.show()
 
 
+class quintuplas_dialog(QDialog):
+    def __init__(self, ui_name, image_url):
+        super().__init__()
 
+        self.setWindowTitle(ui_name)
+        self.setFixedSize(800,600)
 
+        self.img_label = QLabel(self)
+        self.img_label.setFixedSize(800,600)
+        pixmap = QPixmap(image_url)
+        self.img_label.setPixmap(pixmap)
+        self.img_label.setScaledContents(True)
 
 
 
