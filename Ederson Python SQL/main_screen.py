@@ -5,6 +5,7 @@ from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.textinput import TextInput
+from mysql_connection import MYSQL_Info
 
 
 
@@ -19,14 +20,25 @@ class Main_Screen(Screen):
         
         title_lbl = Label(text = 'Registered Users', font_size = '40sp', size_hint = (1, None), height = 50)
         
+        
+        
         info_layout = GridLayout(cols=1, spacing=10, size_hint_y=None)
         info_layout.bind(minimum_height=info_layout.setter('height'))
         info_lbl = Label(text = 'ID                 NAME                AGE                 CPF', font_size = '20sp', size_hint = (1, None), height = 50)
         info_scroll = ScrollView(size_hint=(1, 1), do_scroll_y=True, do_scroll_x=False, pos_hint={'center_x': 0.5})
         
-        for i in range(30):
-            info_test_button = Button(text = str('ID                 NAME                AGE                 CPF'), size_hint_y=None, height= 40, font_size = '20sp')
-            info_layout.add_widget(info_test_button)
+
+        user_display_list = MYSQL_Info().info_getter()
+        
+        if user_display_list[0] == "":
+            pass
+                
+        else:
+            for i in user_display_list:
+                info_test_button = Button(text = (f'{i}                 {i}                {i}                 {i}'), size_hint_y=None, height= 40, font_size = '20sp')
+                info_layout.add_widget(info_test_button)
+                info_test_button.bind(on_press = self.go_to_info)
+            
         
         info_search_layout = BoxLayout(orientation = 'horizontal', size_hint = (None, None), width = 500, height = 95)
         info_spacing_lbl = Label(size_hint = (None, 1), width = 190)
@@ -48,6 +60,11 @@ class Main_Screen(Screen):
         
     def return_to_start(self, x):
         self.manager.current = 'start'
+        
+        
+        
+    def go_to_info (self, x):
+        self.manager.current = 'info'
     
         
         
