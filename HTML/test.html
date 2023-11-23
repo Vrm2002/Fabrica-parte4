@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<head>
+<!DOCTYPE html> <!--Define o documento como HTML 5-->
+
+<head> <!--Cabeça do documento, a maior parte das definições do documento fica aqui-->
     <meta charset="UTF-8"> <!--Charset-->
     <link rel="shortcut icon" href="icone_site.png"> 
             <!--rel = Especifica a relação entre o documento atual e o documento vinculado
@@ -9,7 +10,8 @@
             Teste
     </title>
 </head>
-    <body>
+
+    <body> <!--Todo o conteúdo do site fica aqui, é literalmente o corpo-->
         <!--Cabeçalhos H1 ao H6-->
         <h1>Bem vindo ao site de teste em h1</h1> 
         <h2>Bem vindo ao site de teste em h2</h2> 
@@ -60,8 +62,24 @@
 
         <hr> <!-- Linha divisória -->
 
-        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha"> <!--Insere uma imagem. src = source da imagem, alt = o que aparece caso a imagem não carregue-->
-        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha Aumentado" "width:200px;height:300px"> <!--Tamanho alterado-->
+        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha" border="2"> <!--Insere uma imagem. src = source da imagem, alt = o que aparece caso a imagem não carregue-->
+        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha Aumentado" width="450px" height="450px" border="2"> <!--Tamanho alterado-->
+
+        <br>
+        <br>
+
+        <table border="1"> <!--Cria uma tabela, "border" define as bordas (pode ser usado em alguns outros elementos), se não colocar fica sem-->
+            <tr> <!--Table Row, literalmente linhas da tabela-->
+                <th>Empresa</th> 
+                <th>Contato</th> <!--Table Head, cabeçalhos-->
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Senac</td>
+                <td>Ederson</td> <!--Table Data, informações das tabelas-->
+                <td>Brasil</td>
+            </tr>
+        </table>
 
         <br>
 
@@ -74,7 +92,5 @@
             Você também pode querer nos visitar:<br>2022<br>
             Campo Grande, MS, Brasil<br>
         </adress>
+        
     </body>
-
-
-<!--<base href = "link">-->
