@@ -163,20 +163,26 @@
     
                         <input type="submit" value="Enviar"> <!--input submit-->
                     </fieldset>
-                    
 
 
-            <!--Anotações do Forms / Elementos-->
-                <!--FOR: é um relacionador, caso 2 atributos tenham esse mesmo nome, eles estão relacionados -->
-                <!--ID: é uma tag que é usada no codigo para ser procurado depois. Atribui um identificador ao elemento, usado pro JavaScript.-->
-                <!--NAME: é uma busca pelo CSS, especifica o nome de um formulário-->
-                <!--VALUE: determina um valor para um atributo (varia dependendo do atributo)-->
-                <!--PLACEHOLDER: coloca uma breve dica no que deve ser colocado em um input.-->
-                <!--MAXLENGTH: define o quanto pode ser digitado em um input-->
-                <!--SIZE: define o tamanho gráfico do input-->
-                <!--ACTION: usado dentro da tag form, ele envia para o arquivo de destino colocado-->
-                <!--FIELDSET: agrupa elementos de um formulário. Desenha uma caixa separando. <legend> é usado para colocar uma legenda.-->
-                <!--REQUIRED: obriga o usuario a preencher para poder enviar a informação.-->
+                <!--input email--> <!--Campo de Email. Só aceita que emails sejam informados nele.-->
+                    <fieldset id="email">
+                            <legend>E-mail</legend>
+                            <p>Email <input type="email" name="email" id="campoe" size="20" placeholder="example@example.com" maxlength="30"></p> <!--input email-->
+                    </fieldset>
+
+
+                <!--input password--> <!--Campo de Senha. Esconde o que foi digitado.-->
+                    <fieldset id="senha">
+                            <legend>Senha</legend>
+                            <p>Senha <input type="password" name="Senha" id="campos" size="20" maxlength="10" placeholder="abc@123"> </p> <!--input senha-->
+                    </fieldset>
+
+                <!--input date--> <!--Campo de Datas. Coloca no padrão de dia/mes/ano.-->
+                    <fieldset id="data">
+                            <legend>Data de Nascimento</legend>
+                            <p>Data Nascimento <input type="date" name="date" id="campod" size="20" maxlength="10"> </p> <!--input date-->
+                    </fieldset>
            
         </form>
 
@@ -199,5 +205,17 @@
                 <!--/imagem.png / faz com que se use o arquivo root(raiz)-->
                 <!--../nomedapasta/imagem.png ../nomedapasta faz com que se retorne uma pasta e acesse a outra nomeada.-->
                 <!--Alguns acima podem ser usados sucessicamente: ../../, /pasta1/pasta2/pasta3 -->
+
+            <!--Anotações do Forms / Elementos-->
+                <!--FOR: é um relacionador, caso 2 atributos tenham esse mesmo nome, eles estão relacionados -->
+                <!--ID: é uma tag que é usada no codigo para ser procurado depois. Atribui um identificador ao elemento, usado pro JavaScript.-->
+                <!--NAME: é uma busca pelo CSS, especifica o nome de um formulário-->
+                <!--VALUE: determina um valor para um atributo (varia dependendo do atributo)-->
+                <!--PLACEHOLDER: coloca uma breve dica no que deve ser colocado em um input.-->
+                <!--MAXLENGTH: define o quanto pode ser digitado em um input-->
+                <!--SIZE: define o tamanho gráfico do input-->
+                <!--ACTION: usado dentro da tag form, ele envia para o arquivo de destino colocado-->
+                <!--FIELDSET: agrupa elementos de um formulário. Desenha uma caixa separando. <legend> é usado para colocar uma legenda.-->
+                <!--REQUIRED: obriga o usuario a preencher para poder enviar a informação.-->
 
     </body>
