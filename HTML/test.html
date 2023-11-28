@@ -1,5 +1,6 @@
 <!DOCTYPE html> <!--Define o documento como HTML 5-->
 
+
 <head> <!--Cabeça do documento, a maior parte das definições do documento fica aqui-->
     <meta charset="UTF-8"> <!--Charset-->
     <link rel="shortcut icon" href="icone_site.png"> 
@@ -102,6 +103,83 @@
             <li>Sexta</li>
         </ol>
 
+        <form> <!--Container-->
+            <!--input types-->
+                <!--input text--> <!--Literalmente input de texto-->
+                    <label for="fname">Primeiro nome:</label> <!--label-->
+                    <br>
+                    <input type="text" id="fname" name="fname"> <!--input text-->
+
+                    <br>
+
+                    <label for="lname">Último nome:</label>
+                    <br>
+                    <input type="text" id="lname" name="lname">
+
+                <!--input radio--> <!--Podem selecionar somente aqueles que não tem o elemento name iguais, se tiverem o mesmo nome só pode selecionar um.-->
+                    <p>Qual sua linguagem preferida? </p>
+                    <input type="radio" id="html" name="fav_language" value="HTML"> <!--input radio-->
+                    <label for="html">HTML</label>
+
+                    <br>
+
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <br>
+
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                
+                <!--input checkbox--> <!--Pode selecionar uma ou mais opções independente.-->
+                    <p>Qual sua comida preferida?: </p>
+                    <input type="checkbox" id="pizza" name="fav_food" value="PIZZA"> <!--input checkbox-->
+                    <label for="pizza">Pizza</label>
+
+                    <br>
+
+                    <input type="checkbox" id="cachorroquente" name="fav_food" value="CACHORRO QUENTE">
+                    <label for="cachorroquente">Cachorro Quente</label>
+
+                    <br>
+
+                    <input type="checkbox" id="churros" name="fav_food" value="CHURROS">
+                    <label for="churros">Churros</label>
+
+                    <br><br>
+
+                <!--input submit--> <!--É um botão de enviar.-->
+                    <fieldset id="pessoal"> <!--Exemplo de fieldset sendo usado-->
+                        <legend>Dados Pessoais</legend> <!--Exemplo de legend sendo usado-->
+                        <label for="flabel">Input 1</label>
+                        <br>
+                        <input type="text" id="flabel" name="flabel" size="20" maxlenght="10" placeholder="Input 1"> <!--placeholder, size e maxlength sendo usados-->
+                        <br>
+                        <label for="slabel">Input 2</label>
+                        <br>
+                        <input type="text" id="slabel" name="slabel" size="20" maxlenght="10" placeholder="Input 2">
+                        
+                        <br>
+    
+                        <input type="submit" value="Enviar"> <!--input submit-->
+                    </fieldset>
+                    
+
+
+            <!--Anotações do Forms / Elementos-->
+                <!--FOR: é um relacionador, caso 2 atributos tenham esse mesmo nome, eles estão relacionados -->
+                <!--ID: é uma tag que é usada no codigo para ser procurado depois. Atribui um identificador ao elemento, usado pro JavaScript.-->
+                <!--NAME: é uma busca pelo CSS, especifica o nome de um formulário-->
+                <!--VALUE: determina um valor para um atributo (varia dependendo do atributo)-->
+                <!--PLACEHOLDER: coloca uma breve dica no que deve ser colocado em um input.-->
+                <!--MAXLENGTH: define o quanto pode ser digitado em um input-->
+                <!--SIZE: define o tamanho gráfico do input-->
+                <!--ACTION: usado dentro da tag form, ele envia para o arquivo de destino colocado-->
+                <!--FIELDSET: agrupa elementos de um formulário. Desenha uma caixa separando. <legend> é usado para colocar uma legenda.-->
+                <!--REQUIRED: obriga o usuario a preencher para poder enviar a informação.-->
+           
+        </form>
+
         <br>
 
         <adress>
@@ -113,5 +191,13 @@
             Você também pode querer nos visitar:<br>2022<br>
             Campo Grande, MS, Brasil<br>
         </adress>
+
+        <!-- Anotações -->
+            <!--Navegação nas Pastas-->
+                <!--../imagem.png ../ faz com que retorne um arquivo para pegar uma imagem.-->
+                <!--./imagem.png ./ faz com que se use uma imagem do proprio arquivo-->
+                <!--/imagem.png / faz com que se use o arquivo root(raiz)-->
+                <!--../nomedapasta/imagem.png ../nomedapasta faz com que se retorne uma pasta e acesse a outra nomeada.-->
+                <!--Alguns acima podem ser usados sucessicamente: ../../, /pasta1/pasta2/pasta3 -->
 
     </body>
