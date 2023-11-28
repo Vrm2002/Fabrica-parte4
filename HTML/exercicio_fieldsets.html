@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Exercício Fieldsets - Prof Ederson
+    </title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset id="dados_pessoais">
+                <legend>Dados Pessoais</legend>
+                <label for="full_name">Nome Completo</label> <br>
+                <input type="text" id="full_name" name="full_name" size="20" maxlength="35" placeholder="Nome Completo">
+
+                <br>
+
+                <label for="cpf">CPF</label> <br>
+                <input type="number" id="cpf" name="cpf" size="20" maxlength="11" placeholder="00000000000">
+
+                <br>
+
+                <label for="rg">RG</label> <br>
+                <input type="number" id="rg" name="rg" size="20" maxlength="7" placeholder="0000000">
+
+                <br>
+
+                <label for="birth_date">Data de Nascimento</label> <br>
+                <input type="date" id="birth_date" name="birth_date" size="20">
+
+                <br>
+
+                <p>Sexo</p>
+                <input type="radio" id="sex_male" name="sex" value="MALE">
+                <label for="sex_male">Masculino</label> <br>
+                <input type="radio" id="sex_female" name="sex" value="FEMALE">
+                <label for="sex_female">Feminino</label>
+        </fieldset>
+        <fieldset id="endereco">
+                <legend>Endereço</legend>
+                <label for="state">Estado</label> <br>
+                <input type="text" id="state" name="state" size="20" maxlength="15" placeholder="São Paulo">
+
+                <br>
+
+                <label for="city">Cidade</label> <br>
+                <input type="text" id="city" name="city" size="20" maxlength="15" placeholder="Campinas">
+
+                <br>
+
+                <label for="slum">Bairro</label> <br>
+                <input type="text" id="slum" name="slum" size="20" maxlength="20" placeholder="Nhanhá">
+
+                <br>
+                
+                <label for="street">Rua</label> <br>
+                <input type="text" id="street" name="street" size="20" maxlength="40" placeholder="Afonso Pena">
+
+                <br>
+
+                <label for="number">Número</label> <br>
+                <input type="number" id="number" name="number" size="20" maxlength="4" placeholder="0000">
+        </fieldset>
+        <fieldset id="dados_financeiros">
+                <legend>Dados Financeiros</legend>
+                <label for="agency">Agência</label> <br>
+                <input type="number" id="agency" name="agency" size="20" maxlength="5" placeholder="00000">
+                
+                <br>
+
+                <label for="account">Número da Conta</label> <br>
+                <input type="number" id="account" name="account" size="20" maxlength="5" placeholder="00000">
+
+                <br>
+
+                <label for="bank">Banco</label> <br>
+                <input type="text" id="bank" name="bank" size="20" maxlength="15" placeholder="Santander">
+
+                <br>
+
+                <label for="credit_card">Número do Cartão</label> <br>
+                <input type="number" id="credit_card" name="credit_card" size="20" maxlength="16" placeholder="0000 0000 0000 0000">
+
+                <br>
+                
+                <label for="income">Ganhos Mensais</label> <br>
+                <input type="number" id="income" name="income" size="20" maxlength="10" placeholder="000000">
+        </fieldset>
+        <fieldset>
+                <legend>Dados Comerciais</legend>
+                <label for="cnpj">CNPJ</label> <br>
+                <input type="number" id="cnpj" name="cnpj" size="20" maxlength="14" placeholder="00000000000100">
+
+                <br>
+
+                <label for="adress_com">Endereço da Empresa</label> <br>
+                <input type="text" id="adress_com" name="adress_com" size="20" maxlength="100" placeholder="Campo Grande - Nhanha, Afonso Pena, 48">
+
+                <br>
+
+                <label for="fant_name">Nome Fantasia</label> <br>
+                <input type="text" id="fant_name" name="fant_name" size="20" maxlength="15" placeholder="Coca-Cola">
+
+                <br>
+
+                <label for="cep">CEP</label> <br>
+                <input type="number" id="cep" name="cep" size="20" maxlength="8" placeholder="00000000">
+
+                <br>
+
+                <label for="propert_name">Nome do Proprietário</label> <br>
+                <input type="propert_name" id="propert_name" name="propert_name" size="20" maxlength="35" placeholder="Bill Gates">
+        </fieldset>
+        <fieldset>
+                <legend>Cadastro Veículo</legend>
+                <label for="placa">Placa</label> <br>
+                <input type="text" id="placa" name="placa" size="20" maxlength="10" placeholder="v143s">
+
+                <br>
+
+                <label for="marca">Marca</label> <br>
+                <input type="text" id="marca" name="marca" size="20" maxlength="10" placeholder="Tesla">
+
+                <br>
+
+                <label for="modelo">Modelo</label> <br>
+                <input type="text" id="modelo" name="modelo" size="20" maxlength="10" placeholder="Tesla F100">
+
+                <br>
+
+                <label for="renavam">Renavam</label> <br>
+                <input type="number" id="renavam" name="renavam" size="20" maxlegnth="11" placeholder="00000000000">
+
+                <br>
+
+                <label for="exped_date">Data de Fabricação</label> <br>
+                <input type="date" id="exped_date" nambe="exped_date" size="20">
+        </fieldset>
+        <fieldset>
+                <legend>Cadastro Imóvel</legend>
+                <label for="property_street">Rua</label> <br>
+                <input type="text" id="property_street" name="property_stree" size="20" maxlength="40" placeholder="Afonso Pena">
+
+                <br>
+
+                <label for="property_num">Número</label> <br>
+                <input type="number" id="property_num" name="property_num" size="20" maxlength="4" placeholder="0000">
+
+                <br>
+
+                <label for="property_slum">Bairro</label> <br>
+                <input type="text" id="property_slum" name="property_slum" size="20" maxlength="20" placeholder="Nhánhá">
+
+                <br>
+
+                <label for="property_script">Escritura</label> <br>
+                <input type="number" id="property_script">
+
+
+        </fieldset>
+    </form>
+</body>
