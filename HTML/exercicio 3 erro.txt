@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo HTML</title>
+</head>
+<body> <!--Erro aqui, está escrito "bory", é body-->
+
+    <h1>Título Principal</h1>
+
+    <p><strong>Negrito</strong> e <em>Itálico</em></p>
+    <h2>Parágrafos:</h2>
+    <p>Parágrafo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>
+      Link de Acesso
+        <a href="https://www.google.com.br">Página do google</a>.
+      </p>
+
+    <h2>Lista:</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Tabela:</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+            </tr>
+        </thead>
+        <tbody> <!--"tbory"-->
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+            </tr>
+            <tr>
+                <td>Dado 3</td>
+                <td>Dado 4</td>
+            </tr>
+            <tr>
+                <td>Dado 5</td>
+                <td>Dado 6</td>
+            </tr>
+        </tbody> <!--"tbory"-->
+    </table>
+
+    <h2>Figura:</h2>
+    <img src="img/foto.jpg" alt="Descrição da Imagem">
+
+    <h2>Áudio:</h2>
+    <audio controls>
+        <source src="audio/audio.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <h2>Vídeo:</h2>
+    <video width="320" height="240" controls>
+        <source src="video/video.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+
+    
+    <h2>Formulário:</h2>
+    <form action="/seu/endpoint" method="post">
+        <label for="nome">Nome:</label> <!--"labeu"-->
+        <input type="text" id="nome" name="nome" required> <!--"Imput"-->
+
+        <label for="email">Email:</label> <!--"labeu"-->
+        <input type="email" id="email" name="email" required> <!--"Imput"-->
+
+        <label for="idade">Idade:</label> <!--"labeu"-->
+        <input type="number" id="idade" name="idade" required> <!--"Imput"-->
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required> <!--"Imput"-->
+
+        <label for="mensagem">Mensagem:</label> <!--"labeu"-->
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <input type="submit" value="Enviar"> <!--"Imput"-->
+    </form>
+
+    <h2>Parágrafos:</h2>
+    <p>Parágrafo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Parágrafos:</h2>
+    <p>Parágrafo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Parágrafos:</h2>
+    <p>Parágrafo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Parágrafo 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+    Parágrafo 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+    Parágrafo 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body> <!--Erro aqui, está escrito "bory", é body-->
+</html>
