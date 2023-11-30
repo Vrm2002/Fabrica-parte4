@@ -189,6 +189,30 @@
                     <legend>Idade</legend>
                     <p>Idade <input type="number" name="number" id="campon" size="20" maxlength="10"> </p> <!--input number-->
                 </fieldset>
+
+                <!--Midias-->
+                    <audio controls autoplay loop muted> <!--Coloca um Audio-->
+                        <source src="audio.ogg" type="audio/ogg"> <!--type facilita o entendimento do navegador de qual midia pertence o arquivo, fazendo a resposta ficar certeira-->
+                        <source src="audio.mp4" type="audio/mp3">
+
+                        Your browser does not support the audio tag
+
+                        <!--Controls = Aparecem botões de controle pro audio.--> 
+                        <!--Autoplay = Faz com que o audio seja tocado assim que a pagina for carregada.-->
+                        <!--Loop = Faz o audio ficar em loop automatico.-->
+                        <!--Muted = deixa o audio mutado como padrão.-->
+                        <!--Audios formatos: .ogg, .mp3, .wav-->
+                    </audio>
+
+                    <video width="320" height="240" controls autoplay loop muted> <!--Coloca um vídeo--> <!--width e height pra deifinir as dimensões do video-->
+                        <source src="movie.mp4" type="video/mp4"> <!--Mesma coisa do audio-->
+                        <source src="movie.ogg" type="video/ogg">
+                        
+                        Your browser does not support the video tag.
+
+                        <!--Os elementos da tag são os mesmos do audio -->
+                        <!--Videos formatos: .mp4, .webm, .ogg -->
+                    </video>
            
         </form>
 
