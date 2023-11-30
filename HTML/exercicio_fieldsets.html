@@ -28,7 +28,6 @@
                 <label for="birth_date">Data de Nascimento</label> <br>
                 <input type="date" id="birth_date" name="birth_date" size="20">
 
-                <br>
 
                 <p>Sexo</p>
                 <input type="radio" id="sex_male" name="sex" value="MALE">
@@ -154,9 +153,94 @@
                 <br>
 
                 <label for="property_script">Escritura</label> <br>
-                <input type="number" id="property_script">
+                <input type="number" id="property_script" name="property_script" placeholder="000000">
+
+                <br>
+
+                <label for="property_iptu">Valor do IPTU</label> <br>
+                <input type="number" id="property_iptu" name="property_iptu" placeholder="0000">
+        </fieldset>
+        <fieldset>
+                <legend>Dados Conjugê</legend>
+                <label for="fiance_name">Nome Completo</label> <br>
+                <input type="text" id="fiance_name" name="fiance_name" size="20" maxlength="20" placeholder="Nome Completo">
+
+                <br>
+
+                <label for="fiance_cpf">CPF</label> <br>
+                <input type="number" id="fiance_cpf" name="fiance_cpf" size="20" maxlength="11" placeholder="00000000000">
+
+                <br>
+
+                <label for="fiance_rg">RG</label> <br>
+                <input type="number" id="fiance_rg" name="fiance_rg" size="20" maxlength="7" placeholder="0000000">
+
+                <br>
+
+                <label for="fiance_birth_date">Data de Nascimento</label> <br>
+                <input type="date" id="fiance_birth_date" name="fiance_birth_date">
 
 
+                <p>Sexo</p>
+                <input type="radio" id="fiance_sex_male" name="fiance_sex" value="MALE">
+                <label for="fiance_sex_male">Masculino</label> <br>
+                <input type="radio" id="fiance_sex_female" name="fiance_sex" value="FEMALE">
+                <label for="fiance_sex_female">Feminino</label>
+        </fieldset>
+        <fieldset>
+                <legend>Dados Filho</legend>
+                <label for="sibling_name">Nome Completo</label> <br>
+                <input type="text" id="sibling_name" name="sibling_name" size="20" maxlength="20" placeholder="Nome Completo">
+
+                <br>
+
+                <label for="sibling_cpf">CPF</label> <br>
+                <input type="number" id="sibling_cpf" name="sibling_cpf" size="20" maxlength="11" placeholder="00000000000">
+
+                <br>
+
+                <label for="sibling_rg">RG</label> <br>
+                <input type="number" id="sibling_rg" name="sibling_rg" size="20" maxlength="7" placeholder="0000000">
+
+                <br>
+
+                <label for="sibling_birth_date">Data de Nascimento</label> <br>
+                <input type="date" id="sibling_birth_date" name="sibling_birth_date">
+
+
+                <p>Sexo</p>
+                <input type="radio" id="sibling_sex_male" name="sibling_sex" value="MALE">
+                <label for="sibling_sex_male">Masculino</label> <br>
+                <input type="radio" id="sibling_sex_female" name="sibling_sex" value="FEMALE">
+                <label for="sibling_sex_female">Feminino</label>
+        </fieldset>
+        <fieldset>
+                <legend>Dados Formação Escolar</legend>
+                <label for="education_level">Escolaridade</label> <br>
+                <input type="text" id="education_level" name="education_level" size="20" maxlength="20" placeholder="Superior">
+
+                <br>
+
+                <label for="institution">Instituição</label> <br>
+                <input type="text" id="institution" name="institution" size="20" maxlength="50" placeholder="Harvard">
+
+
+                <br>
+
+                <label for="degree">Grau</label> <br>
+                <input type="text" id="degree" name="degree" size="20" maxlength="20" placeholder="bacharel">
+
+                <br>
+
+                <label for="course_name">Curso</label> <br>
+                <input type="text" id="course_name" name="course_name" size="20" maxlength="50" placeholder="Ciência da Computação">
+
+                <br><br>
+
+                <label for="period_start">Começo:</label>
+                <input type="date" id="period_start" name="period_start">
+                <label for="period_finish">Término:</label>
+                <input type="date" id="period_finish" name="period_finish">
         </fieldset>
     </form>
 </body>
