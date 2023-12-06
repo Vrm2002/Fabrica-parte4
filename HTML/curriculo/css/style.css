@@ -4,5 +4,33 @@ html, body {
 }
 
 body {
-    background: linear-gradient(blue, pink);
+    background: linear-gradient(red, black) no-repeat;
+    color: white;
 }
+
+b {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.scroller {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+.scroller section {
+    scroll-snap-align: start;
+  }
