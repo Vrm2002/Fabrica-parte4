@@ -3,18 +3,27 @@
 
 <head> <!--Cabeça do documento, a maior parte das definições do documento fica aqui-->
     <meta charset="UTF-8"> <!--Charset-->
-    <link rel="shortcut icon" href="icone_site.png"> 
+    <link rel="shortcut icon" href="./images/icone_site.png"> 
             <!--rel = Especifica a relação entre o documento atual e o documento vinculado
                 stylesheet = folha de estilo "shortcut icon"
                 href = Link externo -->
     <title>
             Teste
     </title>
+    <link rel="stylesheet" href="./styles/styles.css"> <!--CSS sendo usado de maneira externa, o mais utilizado-->
+    <style> 
+        h1{
+            color:blue;
+        }
+        p{
+            color:red;
+        }
+    </style> <!--CSS sendo usado de maneira interna, no head.-->
 </head>
 
     <body> <!--Todo o conteúdo do site fica aqui, é literalmente o corpo-->
         <!--Cabeçalhos H1 ao H6-->
-        <h1>Bem vindo ao site de teste em h1</h1> 
+        <h1 style="color:blue">Bem vindo ao site de teste em h1</h1> <!--CSS sendo usado inline.-->
         <h2>Bem vindo ao site de teste em h2</h2> 
         <h3>Bem vindo ao site de teste em h3</h3> 
         <h4>Bem vindo ao site de teste em h4</h4> 
@@ -63,8 +72,8 @@
 
         <hr> <!-- Linha divisória -->
 
-        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha" border="2"> <!--Insere uma imagem. src = source da imagem, alt = o que aparece caso a imagem não carregue-->
-        <img src="gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha Aumentado" width="450px" height="450px" border="2"> <!--Tamanho alterado-->
+        <img src="./images/gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha" border="2"> <!--Insere uma imagem. src = source da imagem, alt = o que aparece caso a imagem não carregue-->
+        <img src="./images/gato_makonha.jpg" alt="Gato Makonha" title="Gato Makonha Aumentado" width="450px" height="450px" border="2"> <!--Tamanho alterado-->
 
         <br>
         <br>
@@ -193,7 +202,7 @@
                 <!--Midias-->
                     <audio controls autoplay loop muted> <!--Coloca um Audio-->
                         <source src="audio.ogg" type="audio/ogg"> <!--type facilita o entendimento do navegador de qual midia pertence o arquivo, fazendo a resposta ficar certeira-->
-                        <source src="risada_peludao.mp3" type="audio/mp3">
+                        <source src="./audio/risada_peludao.mp3" type="audio/mp3">
 
                         Your browser does not support the audio tag
 
@@ -205,7 +214,7 @@
                     </audio>
 
                     <video width="320" height="240" controls autoplay loop muted> <!--Coloca um vídeo--> <!--width e height pra deifinir as dimensões do video-->
-                        <source src="peludao_rindo.mp4" type="video/mp4"> <!--Mesma coisa do audio-->
+                        <source src="./video/peludao_rindo.mp4" type="video/mp4"> <!--Mesma coisa do audio-->
                         <source src="movie.ogg" type="video/ogg">
                         
                         Your browser does not support the video tag.
@@ -307,5 +316,9 @@
                 <!--ACTION: usado dentro da tag form, ele envia para o arquivo de destino colocado-->
                 <!--FIELDSET: agrupa elementos de um formulário. Desenha uma caixa separando. <legend> é usado para colocar uma legenda.-->
                 <!--REQUIRED: obriga o usuario a preencher para poder enviar a informação.-->
+
+            
+                
+
 
     </body>
