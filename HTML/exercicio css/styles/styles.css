@@ -1,0 +1,38 @@
+body{
+    background-color:rgb(233, 224, 224);
+    margin: 0;
+    padding: 0;
+}
+#header{
+    color:white;
+    text-align: center;
+    background-color: rgb(85, 185, 85);
+    padding: 10px;
+}
+#main{
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color :white;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 0.3%;
+    box-shadow: 3px 5px 8px rgb(170, 170, 170);
+}
+#formulario{
+    background-color: rgb(52, 176, 253);
+    border-style: none;
+    color:white;
+    padding-bottom: 2.5%;
+}
+#footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 0.3%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}

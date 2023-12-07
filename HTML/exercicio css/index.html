@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div id="header">
-        <h1>Bem-Vindo ao Meu Site Colorido</h1>
-    </div>
+        <div id="header">
+            <header>
+                <h1>Bem-Vindo ao Meu Site Colorido</h1>
+            </header>
+        </div>
+
+        <br>
+
     <div id="main">
         <main>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
@@ -23,6 +28,70 @@
                 <li>Item B</li>
                 <li>Item C</li>
             </ol>
+            <img src="./images/imagem1.jpeg" alt="Esqueleto" title="Esqueleto">
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <img src="./images/imagem2.jpeg" alt="Moça" title="Moça">
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <img src="./images/imagem3.jpeg" alt="Dois Gatos" title="Dois Gatos">
+
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <img src="./images/imagem4.jpeg" alt="Zebra" title="Zebra">
+            
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <img src="./images/imagem5.jpeg" alt="Gato Burro" title="Gato Burro">
         </main>
+    </div>
+    <br>
+    <div id="formulario">
+        <form>
+            <fieldset id="formulario">
+                <h2>Formulário</h2>
+
+                <label for="name">Nome: |</label>
+                <input type="text" id="name" name="name"> <br>
+
+                <label for="email">Email: |</label>
+                <input type="text" id="email" name="email"> <br>
+
+                <label for="password">Senha: |</label>
+                <input type="password" id="password" name="password"> <br>
+                
+                <label for="age">Idade: |</label>
+                <input type="number" id="age" name="age"> <br>
+
+                <label for="gender">Gênero:</label>
+                <select id="gender" name="gender"> 
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option> 
+                </select> <br>
+
+
+                <label for="interests">Interesses:</label><br>
+                    <input type="checkbox" id="sports" name="interests" value="Esporte">
+                    <label for="sports">Esporte</label><br>
+                    <input type="checkbox" id="music" name="interests" value="Música">
+                    <label for="music">Música</label><br>
+                    <input type="checkbox" id="tecnology" name="interests" value="Tecnologia">
+                    <label for="tecnology">Tecnologia</label><br>
+
+
+                <label for="mensage">Mensagem:</label> <br>
+                    <textarea id="mensage" name="mensage"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+    <div id="footer">
+        <footer>
+            <p>@2023 Meu Site Colorido. Todos os direitos reservados</p>
+        </footer>
     </div>
 </body>
