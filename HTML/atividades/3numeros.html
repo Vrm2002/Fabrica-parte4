@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Minha Página HTML
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        var first_num = window.prompt("Digite um número:")
+        var second_num = window.prompt("Outro:")
+        var third_num = window.prompt("De novo:")
+        var bigger_num = ""
+        var lower_num = ""
+
+        if (first_num > second_num && first_num > third_num){
+            bigger_num = first_num
+            if (second_num > third_num){
+                lower_num = third_num
+            }
+            else if (third_num > second_num){
+                lower_num = second_num   
+            }
+            window.alert("O maior número é: "+bigger_num+". E o menor: "+lower_num);
+        }
+
+        else if (second_num > first_num && second_num > third_num){
+            bigger_num = second_num
+            if (first_num > third_num){
+                lower_num = third_num
+            }
+            else if (third_num > first_num){
+                lower_num = first_num
+            }
+            window.alert("O maior número é: "+bigger_num+". E o menor: "+lower_num);
+        }
+
+        else if (third_num > first_num && third_num > second_num){
+            bigger_num = third_num
+            if (first_num > second_num){
+                lower_num = second_num
+            }
+            else if (second_num > first_num){
+                lower_num = first_num
+            }
+            window.alert("O maior número é: "+bigger_num+". E o menor: "+lower_num);
+        }
+        else if (first_num === second_num || first_num === third_num || second_num === third_num){
+            window.alert("Existe números");
+        };
+
+        
+        </script>
+</body>
