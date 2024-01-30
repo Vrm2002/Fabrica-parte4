@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Minha Página HTML
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        var pergunta = window.prompt("Em que turno você estuda?");
+
+        if (pergunta === "Matutino" || pergunta === "matutino"){
+            window.alert("Bom dia!");
+        }
+        
+        else if (pergunta === "Vespertino" || pergunta === "vespertino"){
+            window.alert("Boa tarde!");
+        }
+
+        else if (pergunta === "Noturno" || pergunta === "noturno"){
+            window.alert("Boa noite!");
+        }
+        
+        else{
+            window.alert("Valor inválido!");
+        };
+    </script>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Minha Página HTML
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        var salario = window.prompt("Digite o salário do funcionário:");
+        salario = parseFloat(salario);
+
+        if(salario <= 280){
+            var aumento = 0.2;
+            var valoraplicado = salario*aumento;
+            var finalsal = (salario * aumento)+salario;
+
+            window.alert("Salário Inicial: "+salario+"\nPercentual de Reajuste: 20%\nValor Adicionado: "+valoraplicado+"\nSalário Final: "+finalsal);
+        }
+
+        else if(salario > 280 && salario < 700){
+            var aumento = 0.15;
+            var valoraplicado = salario*aumento;
+            var finalsal = (salario * aumento)+salario;
+
+            window.alert("Salário Inicial: "+salario+"\nPercentual de Reajuste: 15%\nValor Adicionado: "+valoraplicado+"\nSalário Final: "+finalsal);
+        }
+
+        else if(salario >= 700 && salario < 1500){
+            var aumento = 0.10;
+            var valoraplicado = salario*aumento;
+            var finalsal = (salario * aumento)+salario;
+
+            window.alert("Salário Inicial: "+salario+"\nPercentual de Reajuste: 10%\nValor Adicionado: "+valoraplicado+"\nSalário Final: "+finalsal);
+        }
+
+        else if(salario >= 1500){
+            var aumento = 0.05;
+            var valoraplicado = salario*aumento;
+            var finalsal = (salario * aumento)+salario;
+
+            window.alert("Salário Inicial: "+salario+"\nPercentual de Reajuste: 5%\nValor Adicionado: "+valoraplicado+"\nSalário Final: "+finalsal);
+        }; 
+    </script>
+</body>

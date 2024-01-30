@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Minha Página HTML
+    </title>
+</head>
+<body>
+    <script type="text/javascript">
+        var first_num = window.prompt("Primeiro Número:");
+        var second_num = window.prompt("Segundo Número:");
+        var third_num = window.prompt("Terceiro Número:");
+        var um = " ";
+        var dois = " ";
+        var tres = " ";
+        first_num = parseInt(first_num)
+        second_num = parseInt(second_num)
+        third_num = parseInt(third_num)
+
+        if (first_num > second_num && first_num > third_num){
+            um = first_num
+            if (second_num > third_num){
+                dois = second_num
+                tres = third_num
+            }
+            else if (third_num > second_num){
+                dois = third_num
+                tres = second_num
+            }
+            window.alert("A ordem crescente é: "+um+", "+dois+", "+tres+". E a ordem decrescente é: "+tres+", "+dois+", "+um+".")
+        }
+
+        else if (second_num > first_num && second_num > third_num){
+            um = second_num
+            if (first_num > third_num){
+                dois = firstd_num
+                tres = third_num
+            }
+            else if (third_num > first_num){
+                dois = third_num
+                tres = first_num
+            }
+            window.alert("A ordem crescente é: "+um+", "+dois+", "+tres+". E a ordem decrescente é: "+tres+", "+dois+", "+um+".")
+        }
+
+        else if (third_num > first_num && third_num > second_num){
+            um = third_num
+            if (first_num > second_num){
+                dois = first_num
+                tres = second_num
+            }
+            else if (second_num > first_num){
+                dois = second_num
+                tres = first_num
+            }
+            window.alert("A ordem crescente é: "+um+", "+dois+", "+tres+". E a ordem decrescente é: "+tres+", "+dois+", "+um+".")
+        };
+    </script>
+</body>
