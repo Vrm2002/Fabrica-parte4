@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+        <head>
+
+        </head>
+        <body>
+            <script type="text/javascript">
+                let cand1 = 0;
+                let cand2 = 0;
+                let cand3 = 0;
+                let votantes = window.prompt("Qual o número de votantes?");
+
+                votantes = Number(votantes);
+
+                for(let i = 0; i<=votantes; i++){
+                    let x = window.prompt("1. Para Cand1\n2. Para Cand2\n3. Para Cand3\nVote:");
+                    if(x=="1"){
+                        cand1+=1
+                    }
+                    else if(x=="2"){
+                        cand2+=1
+                    }
+                    else if(x=="3"){
+                        cand3+=1
+                    }
+                }
+
+                if(cand1>cand2 && cand1>cand3){
+                    console.log("O vencedor é: cand1, com:", cand1, "votos.")
+                }
+                else if(cand2>cand1 && cand2>cand3){
+                    console.log("O vencedor é: cand2, com:", cand2, "votos.")
+                }
+                else if(cand3>cand1 && cand3>cand2){
+                    console.log("O vencedor é: cand3, com:", cand3, "votos.")
+                }
+                else{
+                    console.log("Teve empate.")
+                };
+
+            </script>
+        </body>
+       </html> 
