@@ -1,0 +1,35 @@
+.padrao{
+    background-color:gray;
+    padding:2%;
+    text-align:center;
+    color:white;
+    font-size:30px;
+    margin-left:10%;
+    margin-right:10%;
+    border-radius:10px;
+}
+
+
+#a{
+    margin-bottom:1%;
+}
+
+#b{
+    margin-bottom:1%;
+}
+
+#c{
+    margin-bottom:1%;
+}
+
+#d{
+    margin-bottom:1%;
+}
+
+#e{
+    margin-bottom:1%;
+}
+
+h1{
+    text-align:center;
+}
