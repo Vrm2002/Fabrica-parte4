@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms get e post</title>
+    <link href="./ss.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body-html">
+
+    <table>
+        <thead>
+            <th></th>
+        </thead>
+    </table>
+
+</body>
+</html>
+
+<?php
+
+$nome = $_POST["nome"];
+$rg = $_POST["rg"];
+$cpf = $_POST["cpf"];
+$end = $_POST["endereco"];
+$idade = $_POST["idade"];
+$birth = $_POST["nascimento"];
+$estacoes = $_POST["estacoes"];
+$sexo = $_POST["sexo"];
+$cor = $_POST["cor"];
+$comida = $_POST["food"];
+$hora = $_POST["hours"];
+$semana = $_POST["semana"];
+$senha = $_POST["senha"];
+$lesscor = $_POST["lesscor"];
+
+echo "Nome: $nome<br>";
+echo "RG: $rg<br>";
+echo "CPF: $cpf<br>";
+echo "Endereço: $end<br>";
+echo "Idade: $idade<br>";
+echo "Data de Nascimento: $birth<br>";
+echo "Estações Favoritas:<br>";
+for($i=0;$i<count($estacoes);$i++){
+    echo "$estacoes[$i]<br>";
+}
+echo "Sexo: $sexo<br>";
+echo "Numero da Coloração Favorita: $cor<br>";
+echo "Cor que Odeia: $lesscor<br>";
+echo "Comida Favorita: $comida<br>";
+echo "Horario que Acorda: $hora<br>";
+echo "Semana de Férias: $semana<br>";
+echo "Senha: $senha<br>";
+
+?>

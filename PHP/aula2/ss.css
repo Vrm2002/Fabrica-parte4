@@ -1,0 +1,21 @@
+.body-html{
+    background-color:black;
+    color:white;
+}
+
+.fieldset{
+    background-color:rgb(129, 0, 0);
+    margin-right:80%;
+    padding-left:3%;
+}
+
+.fieldset input{
+    outline: 0;
+    border-width: 0 0 2px;
+    background-color:rgb(129, 0, 0);
+    color:white;
+}
+
+.enviar{
+    margin-left: 7.7%;
+}
