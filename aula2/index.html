@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms get e post</title>
+</head>
+<body>
+
+
+<form method="post" action="action.php">
+
+    <!--elemento "name" sendo adicionado no html-->
+    <p>Nome <input type="text" name="nome" id="nome" size="20" maxlength="20" placeholder="Ex:João"> </p>
+
+<br>
+
+    <b> Qual seu Sistema Operacional? </b>
+    <br>
+
+    <input type="radio" name="sistema" value="Windows 98">Win 98
+
+    <input type="radio" name="sistema" value="Windows XP">Win XP
+
+    <br>
+    <br>
+
+    <b>Qual o melhor professor?</b>
+    <br>
+    <input type="checkbox" id="ederson" name="prof[]" value="Ederson" checked>
+    <label for="ederson">Ederson</label>
+    <input type="checkbox" id="horns" name="prof[]" value="Ederson da Costa">
+    <label for="horns">Ederson da Costa</label>
+
+    <br><br><br>
+
+
+    <input type="submit">
+
+</form>
+
+
+</body>
+</html>

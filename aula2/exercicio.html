@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms get e post</title>
+    <link href="./ss.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body-html">
+
+
+<form method="post" action="exercicioII.php" class="form">
+
+    <fieldset class="fieldset">
+        <legend>Info. Pessoal</legend>
+            <label for="nome_form">Nome</label>
+            <input type="text" maxlength="20" name="nome" id="nome_form">
+            <br><br>
+
+            <label for="RG_form">RG</label>
+            <input type="text" maxlength="20" name="rg" id="RG_form">
+            <br><br>
+
+            <label for="CPF_form">CPF</label>
+            <input type="text" maxlength="20" name="cpf" id="CPF_form">
+            <br><br>
+
+            <label for="end_form">Endereço</label>
+            <input type="text" maxlength="20" name="endereco" id="end_form">
+            <br><br>
+
+            <label for="age_form">Idade</label>
+            <input type="number" maxlength="3" name="idade" id="age_form">
+            <br><br>
+
+            <label for="birth_form">Data de Nascimento</label>
+            <input type="date" name="nascimento" id="birth_form">
+    </fieldset>
+
+    <br><br>
+
+    <fieldset class="fieldset">
+        <legend>Perguntas</legend>
+            <p><b>Qual sua época do ano favorita?</b></p>
+            <input type="checkbox" id="primavera" name="estacoes[]" value="Primavera" checked>Primavera
+            <input type="checkbox" id="outono" name="estacoes[]" value="Outono"> Outono
+            <br>
+            <input type="checkbox" id="verao" name="estacoes[]" value="Verão"> Verão
+            <input type="checkbox" id="inverno" name="estacoes[]" value="Inverno"> Inverno
+            <br><br>
+
+            <p><b>Sexo</b></p>
+            <input type="radio" name="sexo" value="Masculino">Masculino
+            <input type="radio" name="sexo" value="Feminino">Feminino
+            <br><br>
+
+            <p><b>Cor Favorita</b></p>
+            <input type="color" name="cor">
+            <br><br>
+
+            <p><b>Comida Favorita</b></p>
+            <input type="text" maxlength="20" name="food">
+            <br><br>
+
+            <p><b>Hora que Acorda</b></p>
+            <input type="time" name="hours">
+            <br><br>
+
+            <p><b>Semana de Férias</b></p>
+            <input type="week" name="semana">
+            <br><br>
+
+            <p><b>Senha</b></p>
+            <input type="password" name="senha">
+            <br><br>
+
+            <p><b>Cor que menos gosta</b></p>
+            <input type="color" name="lesscor">
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar" class="enviar">
+</form>
+</body>
+</html>
